@@ -1,25 +1,46 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import logo from '../../assets/img/logo.svg';
-import Greetings from '../../containers/Greetings/Greetings';
 import './Popup.css';
+import Login from './Screens/Login';
+import Main from './Screens/Main';
+import Setting from './Screens/Setting';
 
 const Popup = () => {
+  const [page, setPage] = React.useState('login');
+
+  var Store = chrome.storage.local;
+
+  useLayoutEffect(() => {
+    Store.get((e) => {
+      if (e.token) {
+        setPage('setting');
+      }
+      if (e.activate === undefined) {
+        Store.set({ activate: true });
+      }
+    });
+  }, []);
+
+  const ActivePage = (state) => {
+    console.log(state);
+    if (state) {
+      setPage(state);
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/pages/Popup/Popup.jsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
+      {page === 'login' ? (
+        <Login Activate={ActivePage} />
+      ) : (
+        <Setting Activate={ActivePage} />
+      )}
     </div>
   );
 };
