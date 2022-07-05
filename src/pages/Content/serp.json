@@ -1,0 +1,54 @@
+{
+  "query": "test",
+  "location": "PK",
+  "results": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "link": "https://www.speedtest.net/",
+      "position": 1,
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Fast.com: Internet Speed Test",
+      "link": "https://fast.com/",
+      "position": 2,
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Test.com: Home",
+      "link": "https://test.com/",
+      "position": 3,
+      "snippet": "An Internet Speed Test A COVID Test A Testing And Certification Platform A Lab Test Location ... An SAT Practice Test USMLE Step 1 Practice Tests"
+    },
+    {
+      "title": "Test Definition & Meaning - Merriam-Webster",
+      "link": "https://www.merriam-webster.com/dictionary/test",
+      "position": 4,
+      "snippet": "1 : a critical examination, observation, evaluation, or trial specifically : the procedure of submitting a statement to such conditions or operations as will ..."
+    },
+    {
+      "title": "Exam - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Test_(assessment)",
+      "position": 5,
+      "snippet": "A test or examination (exam or evaluation) is an educational assessment intended to measure a test-taker's knowledge, skill, aptitude, physical fitness, ..."
+    },
+    {
+      "title": "Test - Wikipedia",
+      "link": "https://en.wikipedia.org/wiki/Test",
+      "position": 6,
+      "snippet": "Test (assessment), an educational assessment intended to measure the respondents' knowledge or other abilities ..."
+    },
+    {
+      "title": "Test Definition & Meaning - Dictionary.com",
+      "link": "https://www.dictionary.com/browse/test",
+      "position": 7,
+      "snippet": "More generally, test refers to a trial, experiment, or examination that is designed to determine the qualities or characteristics of someone or something. As a ..."
+    },
+    {
+      "title": "Speakeasy Internet Speed Test | Fusion Connect",
+      "link": "https://www.speakeasy.net/speedtest/",
+      "position": 8,
+      "snippet": "Our bandwidth test uses HTML5 technology and does not require any downloads to run. Bandwidth speed tests are typically used to check speed. However, our Speed ..."
+    }
+  ]
+}

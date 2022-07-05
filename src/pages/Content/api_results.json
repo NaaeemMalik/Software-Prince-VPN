@@ -1,0 +1,875 @@
+[
+  {
+    "position": 1,
+    "domain": {
+      "name": "soundcloud.com",
+      "status": "success",
+      "creation_date": "2005-07-25",
+      "expiration_date": "2023-06-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "embed.ly",
+      "status": "success",
+      "creation_date": "2009-10-13",
+      "expiration_date": "2022-10-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "quora.com",
+      "status": "success",
+      "creation_date": "2000-03-29",
+      "expiration_date": "2024-03-29"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "bandcamp.com",
+      "status": "success",
+      "creation_date": "2003-06-11",
+      "expiration_date": "2025-01-02"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "itemfix.com",
+      "status": "success",
+      "creation_date": "2020-11-16",
+      "expiration_date": "2022-11-16"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "digg.com",
+      "status": "success",
+      "creation_date": "2000-02-20",
+      "expiration_date": "2028-12-29"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "springer.com",
+      "status": "success",
+      "creation_date": "1997-05-29",
+      "expiration_date": "2023-05-28"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "wikipedia.org",
+      "status": "success",
+      "creation_date": "2001-01-13",
+      "expiration_date": "2023-01-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "instagram.com",
+      "status": "success",
+      "creation_date": "2004-06-04",
+      "expiration_date": "2031-06-04"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "healthdata.org",
+      "status": "success",
+      "creation_date": "2012-09-05",
+      "expiration_date": "2022-09-05"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "theverge.com",
+      "status": "success",
+      "creation_date": "1998-11-11",
+      "expiration_date": "2022-11-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "mashable.com",
+      "status": "success",
+      "creation_date": "2005-07-19",
+      "expiration_date": "2026-07-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "downdetector.com",
+      "status": "success",
+      "creation_date": "2013-02-18",
+      "expiration_date": "2023-02-18"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "tmphysio.com.au",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "tiktok.com",
+      "status": "success",
+      "creation_date": "1996-07-21",
+      "expiration_date": "2023-07-20"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "globalnews.ca",
+      "status": "success",
+      "creation_date": "2002-02-14",
+      "expiration_date": "2023-02-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "inputmag.com",
+      "status": "success",
+      "creation_date": "2012-09-10",
+      "expiration_date": "2030-09-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "amazon.com",
+      "status": "success",
+      "creation_date": "1994-11-01",
+      "expiration_date": "2024-10-31"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "theweek.in",
+      "status": "success",
+      "creation_date": "2005-02-05",
+      "expiration_date": "2023-02-05"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "dailymotion.com",
+      "status": "success",
+      "creation_date": "2005-03-15",
+      "expiration_date": "2026-03-15"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "youtube.com",
+      "status": "success",
+      "creation_date": "2005-02-15",
+      "expiration_date": "2023-02-15"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "similarweb.com",
+      "status": "success",
+      "creation_date": "2008-04-10",
+      "expiration_date": "2024-04-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "builtwith.com",
+      "status": "success",
+      "creation_date": "2007-07-22",
+      "expiration_date": "2031-07-22"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "tripadvisor.com",
+      "status": "success",
+      "creation_date": "1999-03-23",
+      "expiration_date": "2023-03-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "spotify.com",
+      "status": "success",
+      "creation_date": "2006-04-23",
+      "expiration_date": "2030-04-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "wizmotions.com",
+      "status": "success",
+      "creation_date": "2013-05-26",
+      "expiration_date": "2023-05-26"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "redbubble.com",
+      "status": "success",
+      "creation_date": "2004-06-13",
+      "expiration_date": "2023-06-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "networkcultures.org",
+      "status": "success",
+      "creation_date": "2004-07-23",
+      "expiration_date": "2022-07-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "businessinsider.com",
+      "status": "success",
+      "creation_date": "1998-03-06",
+      "expiration_date": "2022-09-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "wired.com",
+      "status": "success",
+      "creation_date": "1992-11-20",
+      "expiration_date": "2023-11-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "newsweek.com",
+      "status": "success",
+      "creation_date": "1994-05-17",
+      "expiration_date": "2023-05-18"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "ilpoderino-dicomano.it",
+      "status": "success",
+      "creation_date": "2022-06-08",
+      "expiration_date": "2023-06-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "facebook.com",
+      "status": "success",
+      "creation_date": "1997-03-29",
+      "expiration_date": "2031-03-30"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "pinterest.com",
+      "status": "success",
+      "creation_date": "2009-11-26",
+      "expiration_date": "2022-11-26"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "twitter.com",
+      "status": "success",
+      "creation_date": "2000-01-21",
+      "expiration_date": "2023-01-21"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "justalternativeto.com",
+      "status": "success",
+      "creation_date": "2017-01-10",
+      "expiration_date": "2023-01-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "twitch.tv",
+      "status": "success",
+      "creation_date": "2009-06-08",
+      "expiration_date": "2024-06-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "minitool.com",
+      "status": "success",
+      "creation_date": "2004-04-19",
+      "expiration_date": "2025-04-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "findwords.info",
+      "status": "success",
+      "creation_date": "2014-12-14",
+      "expiration_date": "2023-12-14"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "techtimes.com",
+      "status": "success",
+      "creation_date": "1999-12-12",
+      "expiration_date": "2022-12-12"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "hottg.com",
+      "status": "success",
+      "creation_date": "2018-09-09",
+      "expiration_date": "2022-09-09"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "urbandictionary.com",
+      "status": "success",
+      "creation_date": "2001-10-14",
+      "expiration_date": "2030-10-14"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "liebelib.net",
+      "status": "success",
+      "creation_date": "2018-01-17",
+      "expiration_date": "2024-01-17"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "telegram.im",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "academia.edu",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "vimeo.com",
+      "status": "success",
+      "creation_date": "2004-12-15",
+      "expiration_date": "2022-12-15"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "indexoncensorship.org",
+      "status": "success",
+      "creation_date": "1998-01-14",
+      "expiration_date": "2023-01-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "jguru.com",
+      "status": "success",
+      "creation_date": "1997-09-16",
+      "expiration_date": "2023-09-15"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "reddit.com",
+      "status": "success",
+      "creation_date": "2005-04-29",
+      "expiration_date": "2024-04-29"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "liveleak.live",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "shutterstock.com",
+      "status": "success",
+      "creation_date": "2003-07-10",
+      "expiration_date": "2027-07-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "theporndude.com",
+      "status": "success",
+      "creation_date": "2013-11-19",
+      "expiration_date": "2026-11-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "deviantart.com",
+      "status": "success",
+      "creation_date": "2000-04-25",
+      "expiration_date": "2022-08-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "techstartups.com",
+      "status": "success",
+      "creation_date": "2003-07-17",
+      "expiration_date": "2031-07-17"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "acethinker.com",
+      "status": "success",
+      "creation_date": "2015-05-20",
+      "expiration_date": "2024-05-20"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "keepsaveit.com",
+      "status": "success",
+      "creation_date": "2018-10-10",
+      "expiration_date": "2022-10-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "leawo.org",
+      "status": "success",
+      "creation_date": "2009-11-30",
+      "expiration_date": "2023-11-30"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "techbyte.sk",
+      "status": "success",
+      "creation_date": "2017-05-03",
+      "expiration_date": "2023-05-03"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "wiki2.org",
+      "status": "success",
+      "creation_date": "2014-09-06",
+      "expiration_date": "2022-09-06"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "backersofhate.org",
+      "status": "success",
+      "creation_date": "2020-06-30",
+      "expiration_date": "2023-06-30"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "signin.co",
+      "status": "success",
+      "creation_date": "2012-12-26",
+      "expiration_date": "2022-12-25"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "stackideas.com",
+      "status": "success",
+      "creation_date": "2009-02-08",
+      "expiration_date": "2023-02-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "archive.org",
+      "status": "success",
+      "creation_date": "1995-12-14",
+      "expiration_date": "2025-12-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "thefocus.news",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "genius.com",
+      "status": "success",
+      "creation_date": "1994-08-05",
+      "expiration_date": "2031-08-04"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "imdb.com",
+      "status": "success",
+      "creation_date": "1996-01-05",
+      "expiration_date": "2024-01-04"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "flickr.com",
+      "status": "success",
+      "creation_date": "2003-11-22",
+      "expiration_date": "2022-11-22"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "tumblr.com",
+      "status": "success",
+      "creation_date": "2006-06-08",
+      "expiration_date": "2023-06-08"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "dbpedia.org",
+      "status": "success",
+      "creation_date": "2007-01-10",
+      "expiration_date": "2023-01-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "yahoo.com",
+      "status": "success",
+      "creation_date": "1995-01-18",
+      "expiration_date": "2023-01-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "t.me",
+      "status": "success",
+      "creation_date": "2010-05-20",
+      "expiration_date": "2023-05-20"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "spiegel.de",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "eksisozluk.com",
+      "status": "success",
+      "creation_date": "2001-07-13",
+      "expiration_date": "2025-11-09"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "zive.cz",
+      "status": "success",
+      "creation_date": "1998-04-25",
+      "expiration_date": "2022-11-10"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "alamy.com",
+      "status": "success",
+      "creation_date": "1999-10-15",
+      "expiration_date": "2030-10-15"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "vice.com",
+      "status": "success",
+      "creation_date": "1997-05-28",
+      "expiration_date": "2029-05-14"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "watson.ch",
+      "status": "not_supported",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "stackoverflow.com",
+      "status": "success",
+      "creation_date": "2003-12-26",
+      "expiration_date": "2023-02-02"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "jiosaavn.com",
+      "status": "success",
+      "creation_date": "2018-03-23",
+      "expiration_date": "2023-03-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "mozilla.org",
+      "status": "success",
+      "creation_date": "1998-01-24",
+      "expiration_date": "2023-01-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "hipertextual.com",
+      "status": "success",
+      "creation_date": "2005-06-14",
+      "expiration_date": "2023-06-14"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "zoominfo.com",
+      "status": "success",
+      "creation_date": "2003-10-16",
+      "expiration_date": "2024-01-30"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "inquirer.net",
+      "status": "success",
+      "creation_date": "1997-07-29",
+      "expiration_date": "2023-07-28"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "allinonedownloader.com",
+      "status": "success",
+      "creation_date": "2018-08-20",
+      "expiration_date": "2022-08-20"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "last.fm",
+      "status": "success",
+      "creation_date": "2002-03-20",
+      "expiration_date": "2023-03-19"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "videoconverterfactory.com",
+      "status": "success",
+      "creation_date": "2009-12-03",
+      "expiration_date": "2028-12-03"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "telegram-store.com",
+      "status": "success",
+      "creation_date": "2016-08-17",
+      "expiration_date": "2022-08-17"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "dvd-fever.co.uk",
+      "status": "success",
+      "creation_date": "2013-11-14",
+      "expiration_date": "2022-11-14"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "engadget.com",
+      "status": "success",
+      "creation_date": "2004-01-23",
+      "expiration_date": "2023-01-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "techbriefly.com",
+      "status": "success",
+      "creation_date": "2019-12-25",
+      "expiration_date": "2023-12-25"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "tubeoffline.com",
+      "status": "success",
+      "creation_date": "2013-06-13",
+      "expiration_date": "2023-06-13"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "nuget.org",
+      "status": "success",
+      "creation_date": "2010-10-23",
+      "expiration_date": "2022-10-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "standard.co.uk",
+      "status": "failure",
+      "creation_date": null,
+      "expiration_date": null
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "bibsonomy.org",
+      "status": "success",
+      "creation_date": "2005-04-12",
+      "expiration_date": "2023-04-12"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "spidersweb.pl",
+      "status": "success",
+      "creation_date": "2010-07-23",
+      "expiration_date": "2023-07-23"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "trustpilot.com",
+      "status": "success",
+      "creation_date": "2007-06-30",
+      "expiration_date": "2022-06-30"
+    }
+  },
+  {
+    "position": 1,
+    "domain": {
+      "name": "apkfab.com",
+      "status": "success",
+      "creation_date": "2019-06-06",
+      "expiration_date": "2028-06-06"
+    }
+  }
+]
