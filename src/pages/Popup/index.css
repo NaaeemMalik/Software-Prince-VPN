@@ -1,14 +1,15 @@
 body {
-  width: 360px;
-  height: 450px;
+  width: 320px;
+  height: 550px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../../assets/Slicing/Love PNG Love PNGTREE.png");
+  background-image: url("../../assets/Slicing/Love\ PNG\ Love\ PNGTREE.png");
   background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 

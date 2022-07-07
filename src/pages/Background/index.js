@@ -1,24 +1,24 @@
-console.log('This is the background page.');
-console.log('Put the background scripts here.');
-
+const md5 = require('md5')
 var Server = chrome.runtime;
 var Store = chrome.storage.local;
+let apikey = "DbM3694x2dAz"
+let salt = "Njh0&$@ZH098GP"
+let randomNum = 1232177// Math.floor(Math.random() * 1000000);
 
 Server.onMessage.addListener(function (resp, sender, sendResponse) {
+  var opt = new URLSearchParams();
+  opt.append("a", apikey);
+  opt.append("r", randomNum);
   switch (resp.type) {
     case 'login':
-      var opt = {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          r: "1232177", action: "ValidateLogin", a: "demo-ge343n30vn",
-
-          username: resp.email, password: resp.password
-        }),
-      };
-      serverRequest('/api/auth/authorize', opt, sendResponse);
+      let tempsc = resp.email + "*" + salt + "-" + apikey + "-" + randomNum + "-"
+      console.log("tempsc ", tempsc);
+      let sc = md5(tempsc)
+      opt.append("action", "ValidateLogin");
+      opt.append("e", resp.email);
+      opt.append("p", resp.password);
+      opt.append("sc", sc);
+      serverRequest(opt, sendResponse);
       break;
     case 'logout':
       var opt = {
@@ -67,19 +67,22 @@ Server.onMessage.addListener(function (resp, sender, sendResponse) {
   return true;
 });
 
-function serverRequest(endpoint, options, callback) {
-  fetch(`https://www.smartersvpn.com/members/includes/vpnapi/api.php`, options)
-    .then((res) => {
-      return res.json();
-    })
-    .then((res) => {
-      console.log(JSON.stringify(res));
-      callback(res);
-    })
-    .catch((err) => {
-      console.log(err);
-      callback(err);
-    });
+function serverRequest(urlencoded, callback) {
+  console.log('serverRequest', urlencoded);
+
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: urlencoded,
+    redirect: 'follow'
+  };
+  fetch("https://www.smartersvpn.com/members/includes/vpnapi/api.php", requestOptions)
+    .then(response => response.json())
+    .then(result => { console.log(result); callback(result); })
+    .catch(error => { console.error('myerror', error); callback(error); });
+
 }
 
 // token 34a55a69a1a7544f6d9fa96be34aef42a6f10c44

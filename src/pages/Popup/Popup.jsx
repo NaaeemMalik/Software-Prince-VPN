@@ -18,8 +18,8 @@ const Popup = () => {
 
   useLayoutEffect(() => {
     Store.get((e) => {
-      if (e.token) {
-        setPage('setting');
+      if (e.userid) {
+        setPage('main');
       }
       if (e.activate === undefined) {
         Store.set({ activate: true });
@@ -38,9 +38,11 @@ const Popup = () => {
     <div className="App">
       {page === 'login' ? (
         <Login Activate={ActivePage} />
-      ) : (
+      ) : page === 'main' ? (
+        <Main Activate={ActivePage} />
+      ) : page === 'setting' ? (
         <Setting Activate={ActivePage} />
-      )}
+      ) : null}
     </div>
   );
 };

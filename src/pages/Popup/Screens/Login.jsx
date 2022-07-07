@@ -27,17 +27,14 @@ const Login = ({ Activate }) => {
       return;
     }
     console.log('email: ' + email);
-    Server.sendMessage(
-      { type: 'login', email: email, password: password },
-      (res) => {
-        if (res?.token) {
-          Store.set({ token: res.token });
-          Activate('setting');
-        } else {
-          showAlert('error', 'Incorrect Email/Password');
-        }
+    Server.sendMessage({ type: 'login', email, password }, (res) => {
+      if (res?.userid) {
+        Store.set({ userid: res.userid });
+        Activate('main');
+      } else {
+        showAlert('error', 'Incorrect Email/Password');
       }
-    );
+    });
   };
 
   const showAlert = (type, message) => {
@@ -53,15 +50,17 @@ const Login = ({ Activate }) => {
     setOpen(false);
   };
   return (
-    <div className="App">
+    <div className="App bglogin">
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <img src="logo_new.png" className="logo_new" alt="logo" />
+      </Box>
       <Box>
         <Typography
-          variant="h3"
           component="div"
           gutterBottom
-          sx={{ fontWeight: 'bold', textAlign: 'left', marginTop: '1rem' }}
+          sx={{ textAlign: 'center', marginTop: '1rem' }}
         >
-          LOGIN
+          Proceed with your <b className="fontRed">Login</b>
         </Typography>
         <TextField
           id="outlined-basic"
@@ -86,14 +85,31 @@ const Login = ({ Activate }) => {
           variant="contained"
           sx={{
             fontWeight: 'bold',
-            width: '100%',
+            width: '85%',
             marginTop: '1rem',
             height: '2.5rem',
+            backgroundColor: 'red',
           }}
           onClick={handleClick}
         >
           LOGIN
         </Button>
+        <Typography
+          component="div"
+          gutterBottom
+          sx={{ textAlign: 'center', marginTop: '1rem' }}
+        >
+          <br />
+          <label>Don't have an account</label>
+          <br />
+          <a
+            className="fontRed"
+            target="_blank"
+            href="https://www.smartersvpn.com/#pricing"
+          >
+            Get a Free Trail
+          </a>
+        </Typography>
       </Box>
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity={alert} sx={{ width: '100%' }}>

@@ -9,6 +9,19 @@
   padding: 10px;
 }
 
+.bglogin {
+  background-image: url("../../assets/Slicing/Splash_bg.png");
+}
+
+.logo_new {
+  width: 220px;
+  height: 160px;
+}
+
+.fontRed {
+  color: red;
+}
+
 .App-logo {
   height: 30vmin;
   pointer-events: none;
@@ -38,6 +51,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
