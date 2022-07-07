@@ -142,13 +142,13 @@ const Setting = ({ Activate }) => {
           >
             SETTING
           </Typography>
-          {/* <ExitToAppIcon
+          <ExitToAppIcon
             cursor="pointer"
             sx={{ fontSize: '60px', marginTop: '0.75rem !important' }}
             onClick={() => {
               Activate('main');
             }}
-          /> */}
+          />
         </Stack>
         <Stack>
           <FormControl fullWidth>

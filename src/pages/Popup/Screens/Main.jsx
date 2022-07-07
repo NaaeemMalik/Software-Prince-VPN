@@ -11,11 +11,18 @@ import Setting from './Setting';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'; // <-- import styles to be used
+import FormControl from '@mui/material/FormControl';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 import '../Popup.css';
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
+const refresh = () => {
+  window.location.reload(false);
+};
 
 const Main = ({ Activate }) => {
   const [open, setOpen] = React.useState(false);
@@ -56,39 +63,42 @@ const Main = ({ Activate }) => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text className="headerfont">
-              <a href="#login">
+              <Button className="none" onClick={refresh}>
                 <FontAwesomeIcon className="fa-cog" icon={solid('rotate')} />
-              </a>{' '}
-              <a href="#login">
+              </Button>{' '}
+              <Button
+                onClick={() => {
+                  Activate('setting');
+                }}
+              >
                 <FontAwesomeIcon className="fa-cog" icon={solid('gear')} />
-              </a>
+              </Button>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>
       </Navbar>
       <Box>
         <Stack direction="row" spacing={20}>
-          <Typography
-            variant="h3"
-            component="div"
-            gutterBottom
-            sx={{
-              fontWeight: 'bold',
-              textAlign: 'left',
-              marginTop: '1rem',
-            }}
-          >
-            MAIN
-          </Typography>
-          <SettingsOutlinedIcon
-            cursor="pointer"
-            sx={{ fontSize: '60px', marginTop: '0.75rem !important' }}
-            onClick={() => {
-              Activate('setting');
-            }}
-          />
+          <FormControl fullWidth>
+            <InputLabel id="domainAge">Domain Age</InputLabel>
+            <Select
+              labelId="domainAge"
+              id="domainAgeSelect"
+              defaultValue="1 Year"
+              value="1 Year"
+              label="Domain Age"
+              // onChange={handleChange}
+            >
+              <MenuItem value={1}>1 Year</MenuItem>
+              <MenuItem value={2}>2 Year</MenuItem>
+              <MenuItem value={3}>3 Year</MenuItem>
+              <MenuItem value={4}>4 Year</MenuItem>
+              <MenuItem value={5}>5 Year</MenuItem>
+            </Select>
+          </FormControl>
         </Stack>
       </Box>
+
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity={alert} sx={{ width: '100%' }}>
           {message}

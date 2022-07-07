@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import CountryCodes from './modules/CountryCodes';
-import Widget from '../Newtab/Newtab';
 
 var Server = chrome.runtime;
 var Store = chrome.storage.local;
