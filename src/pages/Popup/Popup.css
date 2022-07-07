@@ -1,3 +1,5 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
 .App {
   position: absolute;
   top: 0px;
@@ -11,6 +13,19 @@
 
 .bglogin {
   background-image: url("../../assets/Slicing/Splash_bg.png");
+}
+
+.fa-cog {
+  color: white;
+}
+
+.headerfont {
+  font-size: x-large;
+}
+
+.site-page-header-ghost-wrapper {
+  padding: 24px;
+  background-color: #f5f5f5;
 }
 
 .logo_new {

@@ -3,7 +3,7 @@ var Server = chrome.runtime;
 var Store = chrome.storage.local;
 let apikey = "DbM3694x2dAz"
 let salt = "Njh0&$@ZH098GP"
-let randomNum = 1232177// Math.floor(Math.random() * 1000000);
+let randomNum = Math.floor(Math.random() * 100000000);
 
 Server.onMessage.addListener(function (resp, sender, sendResponse) {
   var opt = new URLSearchParams();
@@ -12,7 +12,6 @@ Server.onMessage.addListener(function (resp, sender, sendResponse) {
   switch (resp.type) {
     case 'login':
       let tempsc = resp.email + "*" + salt + "-" + apikey + "-" + randomNum + "-"
-      console.log("tempsc ", tempsc);
       let sc = md5(tempsc)
       opt.append("action", "ValidateLogin");
       opt.append("e", resp.email);
@@ -75,8 +74,7 @@ function serverRequest(urlencoded, callback) {
   var requestOptions = {
     method: 'POST',
     headers: myHeaders,
-    body: urlencoded,
-    redirect: 'follow'
+    body: urlencoded
   };
   fetch("https://www.smartersvpn.com/members/includes/vpnapi/api.php", requestOptions)
     .then(response => response.json())

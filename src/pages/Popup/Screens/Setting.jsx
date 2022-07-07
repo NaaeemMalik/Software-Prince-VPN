@@ -121,17 +121,13 @@ const Setting = ({ Activate }) => {
   };
 
   const logOut = async () => {
-    var token = await getDatafromStorage('token');
-    if (!token) {
-      console.log('token not found');
+    var userid = await getDatafromStorage('userid');
+    if (!userid) {
+      console.log('userid not found');
       return;
     }
-    Server.sendMessage({ type: 'logout', token: token }, (e) => {
-      if (e?.success) {
-        Store.set({ token: null }, () => {
-          Activate('login');
-        });
-      }
+    Store.set({ userid: null }, () => {
+      Activate('login');
     });
   };
   return (

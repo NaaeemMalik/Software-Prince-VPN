@@ -52,7 +52,7 @@ const Login = ({ Activate }) => {
   return (
     <div className="App bglogin">
       <Box display="flex" justifyContent="center" alignItems="center">
-        <img src="logo_new.png" className="logo_new" alt="logo" />
+        <img src="logo_new (2).png" className="logo_new" alt="logo" />
       </Box>
       <Box>
         <Typography
