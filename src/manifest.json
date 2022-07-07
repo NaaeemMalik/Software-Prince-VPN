@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "version": "4.4.2",
-  "name": "Keyword Zebra",
-  "description": "Find New Competitors AND The Easy Keywords They Rank For!",
+  "version": "1.0.0",
+  "name": "Smarters VPN",
+  "description": "Smarters VPN",
   "background": { "service_worker": "background.bundle.js" },
   "action": {
     "default_popup": "popup.html",

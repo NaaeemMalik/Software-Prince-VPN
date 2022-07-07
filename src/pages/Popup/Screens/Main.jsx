@@ -45,6 +45,12 @@ const Main = ({ Activate }) => {
     }
     setOpen(false);
   };
+  const getServersGroup = () => {
+    Server.sendMessage({ type: 'getServersGroup' }, (res) => {
+      console.log(res);
+    });
+  };
+  getServersGroup();
 
   return (
     <div className="App">
@@ -63,10 +69,11 @@ const Main = ({ Activate }) => {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text className="headerfont">
-              <Button className="none" onClick={refresh}>
+              <Button className="bgnone" onClick={refresh}>
                 <FontAwesomeIcon className="fa-cog" icon={solid('rotate')} />
               </Button>{' '}
               <Button
+                className="bgnone"
                 onClick={() => {
                   Activate('setting');
                 }}
@@ -84,8 +91,6 @@ const Main = ({ Activate }) => {
             <Select
               labelId="domainAge"
               id="domainAgeSelect"
-              defaultValue="1 Year"
-              value="1 Year"
               label="Domain Age"
               // onChange={handleChange}
             >

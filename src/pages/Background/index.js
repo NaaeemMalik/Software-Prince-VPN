@@ -5,7 +5,29 @@ let apikey = "DbM3694x2dAz"
 let salt = "Njh0&$@ZH098GP"
 let randomNum = Math.floor(Math.random() * 100000000);
 
+function getDatafromStorage(str) {
+  return new Promise((resolve, reject) => {
+    Store.get(str, (res) => {
+      if (res[str]) {
+        resolve(res[str]);
+      } else {
+        resolve(null);
+      }
+    });
+  });
+}
+var email, sc, userid;
+async function getUserData() {
+  email = await getDatafromStorage("email");
+  let tempsc = email + "*" + salt + "-" + apikey + "-" + randomNum + "-"
+  sc = md5(tempsc)
+  userid = await getDatafromStorage("userid");
+  console.log('background.js1', email, sc, userid);
+  return { email, sc, userid };
+}
+
 Server.onMessage.addListener(function (resp, sender, sendResponse) {
+  console.log('background.js', email, sc, userid);
   var opt = new URLSearchParams();
   opt.append("a", apikey);
   opt.append("r", randomNum);
@@ -17,17 +39,23 @@ Server.onMessage.addListener(function (resp, sender, sendResponse) {
       opt.append("e", resp.email);
       opt.append("p", resp.password);
       opt.append("sc", sc);
+      global.sc = sc;
+      global.email = resp.email;
+      Store.set({
+        email: resp.email,
+        password: resp.password,
+        sc: sc
+      });
       serverRequest(opt, sendResponse);
       break;
-    case 'logout':
-      var opt = {
-        method: 'POST',
-        headers: {
-          Authorization: `Token ${resp.token}`,
-          'Content-Type': 'application/json',
-        },
-      };
-      serverRequest('/api/auth/deauthorize', opt, sendResponse);
+    case 'getServersGroup':
+      getUserData().then(data => {
+        opt.append("sc", data.sc);
+        opt.append("u", data.userid);
+        opt.append("action", "getservergroups");
+        opt.append("e", data.email);
+        serverRequest(opt, sendResponse);
+      });
       break;
     case 'serp':
       var results = resp.results;
