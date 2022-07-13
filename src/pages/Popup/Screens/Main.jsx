@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
@@ -28,7 +28,9 @@ const Main = ({ Activate }) => {
   const [open, setOpen] = React.useState(false);
   const [alert, setAlert] = React.useState('error');
   const [message, setMessage] = React.useState('This is an Error Message');
-  const [setting, setSetting] = React.useState(false);
+  const [connected, setConnected] = React.useState('Not Connected');
+  const [serverlist, setserverlist] = React.useState([]);
+  const [serverlistSelected, setserverlistSelected] = React.useState('');
 
   var Server = chrome.runtime;
   var Store = chrome.storage.local;
@@ -38,19 +40,30 @@ const Main = ({ Activate }) => {
     setMessage(message);
     setOpen(true);
   };
-
+  const handleServerChange = (event) => {
+    setConnected('Disconnect');
+    let val = event.target.value;
+    console.log(val);
+    Store.set({ selectedServer: val });
+    setserverlistSelected(val);
+    Server.sendMessage({ type: 'getServer', servergid: val }, (res) => {
+      console.log(res);
+    });
+  };
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
     }
     setOpen(false);
   };
-  const getServersGroup = () => {
+  useLayoutEffect(() => {
     Server.sendMessage({ type: 'getServersGroup' }, (res) => {
-      console.log(res);
+      if (res.result == 'success') {
+        console.log(res);
+        setserverlist(res.data);
+      }
     });
-  };
-  getServersGroup();
+  }, []);
 
   return (
     <div className="App">
@@ -87,22 +100,43 @@ const Main = ({ Activate }) => {
       <Box>
         <Stack direction="row" spacing={20}>
           <FormControl fullWidth>
-            <InputLabel id="domainAge">Domain Age</InputLabel>
+            <InputLabel id="serverS">Select Server</InputLabel>
+
             <Select
-              labelId="domainAge"
-              id="domainAgeSelect"
-              label="Domain Age"
-              // onChange={handleChange}
+              labelId="serverS"
+              id="serverSelect"
+              label="Select Server"
+              value={serverlistSelected}
+              onChange={handleServerChange}
             >
-              <MenuItem value={1}>1 Year</MenuItem>
-              <MenuItem value={2}>2 Year</MenuItem>
-              <MenuItem value={3}>3 Year</MenuItem>
-              <MenuItem value={4}>4 Year</MenuItem>
-              <MenuItem value={5}>5 Year</MenuItem>
+              {serverlist.map((item, index) => {
+                console.log('item', item, item.groupName, item.id);
+                return (
+                  <MenuItem key={item.id} value={item.id}>
+                    {item.groupName}
+                  </MenuItem>
+                );
+              })}
             </Select>
           </FormControl>
         </Stack>
       </Box>
+      <Button
+        color="error"
+        variant="contained"
+        onClick={() => {
+          Server.sendMessage({ type: 'disconnect' });
+        }}
+        style={{
+          bottom: '15px',
+          width: '94.5%',
+          fontWeight: 'bold',
+          height: '2.5rem',
+          marginTop: '100px',
+        }}
+      >
+        {connected}
+      </Button>
 
       <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
         <Alert onClose={handleClose} severity={alert} sx={{ width: '100%' }}>

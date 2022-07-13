@@ -134,45 +134,7 @@ const Setting = ({ Activate }) => {
     <div className="App">
       <Box>
         <Stack direction="row" spacing={10}>
-          <Typography
-            variant="h3"
-            component="div"
-            gutterBottom
-            sx={{ fontWeight: 'bold', textAlign: 'left', marginTop: '1rem' }}
-          >
-            SETTING
-          </Typography>
-          <ExitToAppIcon
-            cursor="pointer"
-            sx={{ fontSize: '60px', marginTop: '0.75rem !important' }}
-            onClick={() => {
-              Activate('main');
-            }}
-          />
-        </Stack>
-        <Stack>
-          <FormControl fullWidth>
-            <InputLabel id="domainAge">Domain Age</InputLabel>
-            <Select
-              labelId="domainAge"
-              id="domainAgeSelect"
-              defaultValue="1 Year"
-              value={domainAge}
-              label="Domain Age"
-              onChange={handleChange}
-            >
-              <MenuItem value={1}>1 Year</MenuItem>
-              <MenuItem value={2}>2 Year</MenuItem>
-              <MenuItem value={3}>3 Year</MenuItem>
-              <MenuItem value={4}>4 Year</MenuItem>
-              <MenuItem value={5}>5 Year</MenuItem>
-            </Select>
-          </FormControl>
-          {/* <FormControlLabel
-            control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-            label="Activate"
-            sx={{ justifyContent: 'center', marginTop: '1rem' }}
-          /> */}
+
           <Button
             color="error"
             variant="contained"

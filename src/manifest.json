@@ -1,12 +1,16 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "version": "1.0.0",
   "name": "Smarters VPN",
   "description": "Smarters VPN",
-  "background": { "service_worker": "background.bundle.js" },
-  "action": {
+  "background": { "scripts": ["background.bundle.js"] },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "kz-logo.png"
+    },
     "default_popup": "popup.html",
-    "default_icon": "kz-logo.png"
+    "default_title": "Hide My IP"
   },
   "icons": {
     "128": "kz-logo.png"
@@ -18,11 +22,13 @@
       "css": ["content.styles.css"]
     }
   ],
-  "permissions": ["storage"],
-  "web_accessible_resources": [
-    {
-      "resources": [],
-      "matches": []
-    }
+  "permissions": [
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "tabs",
+    "storage",
+    "proxy",
+    "privacy"
   ]
 }
