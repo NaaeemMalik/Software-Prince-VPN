@@ -98,7 +98,8 @@ Server.onMessage.addListener(function (resp, sender, sendResponse) {
             scheme: 'socks5',
             host: host,
             port: port
-          }
+          },
+          bypassList: [apiUrl]
         }
       };
       console.log("connecting", config)

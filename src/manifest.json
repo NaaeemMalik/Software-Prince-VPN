@@ -18,5 +18,6 @@
       "css": ["content.styles.css"]
     }
   ],
-  "permissions": ["webRequest", "tabs", "storage", "proxy", "privacy"]
+  "permissions": ["webRequest", "tabs", "storage", "proxy", "privacy"],
+  "author": "SoftwarePrince.com"
 }
